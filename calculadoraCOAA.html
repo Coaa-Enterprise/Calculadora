@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculadora_style.css">
+    <title>Simulador</title>
+</head>
+<body>
+    <div class="flex_conteiner">
+        <div id="div_box">
+            <h1>Simulador</h1>
+            <h3>Simule aqui uma situação de controle de fluxo de pessoas<br>
+            no uso do banheiro de um estabelecimento.</h3> <br>
+        
+            <p>Quantas cabines estão disponiveis por andar:</p> 
+
+            <p>Quantos andares disponiveis:</p> 
+
+            <p>Quantidade de pessoas por andar:</p> 
+
+            <p>Intevalo de tempo disponibilizado(em minutos):</p> 
+
+            <div id="div_boxInput">
+                <input id="idCabine" placeholder="4"> <br><br>
+                <input id="idAndar" placeholder="6"> <br><br>
+                <input id="idPessoa" placeholder="70"> <br><br>
+                <input id="idTempo" placeholder="30"> <br><br>
+            </div>
+            <button onclick="calcAtraso()">Calcular</button> <br>
+            
+            
+            <div id="div_calc"></div> <br>
+
+            <button style= "display: none;" onclick="resolveAtraso()" id = "buttonResolver" > Resolver </button> <br>
+
+            <div id="div_resolve"></div><br>
+            
+            <button style="display: none;" onclick="pagamento()" id = "buttonPagamento"> Contrate já ! </button>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script src="calculadora_script.js"></script>
