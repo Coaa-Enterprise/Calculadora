@@ -69,15 +69,15 @@ function resolveAtraso() {
 
     div_resolve.innerHTML =      `<b>Aplicando o sistema C.O.A.A, observa-se que:</b><br>`;
     div_resolve.innerHTML +=     `<br>Média de pessoas pelo total de banheiros no prédio: ${pessoasBanheiroSistema}.`;
-    div_resolve.innerHTML +=     `<br>Total de minutos médios necessários para todo mundo ir ao banheiro: ${medioSistema}`;
+    div_resolve.innerHTML +=     `<br>Total de minutos médios necessários para todo mundo ir ao banheiro: ${medioSistema}.`;
     
     if (medioSistema <= tempo) {
 
-        div_resolve.innerHTML +=     `<br>Minutos de atrasos: 0`;
+        div_resolve.innerHTML +=     `<br>Minutos de atrasos: 0.`;
         div_resolve.innerHTML +=     `<br>Houve uma redução de 100% no atraso.`;
     }   
     else {
-        div_resolve.innerHTML =        `<br>Minutos de atrasos: ${atrasoSistema} `;
+        div_resolve.innerHTML =        `<br>Minutos de atrasos: ${atrasoSistema}.`;
         div_resolve.innerHTML +=       `<br>Houve uma redução de ${porcentagemFinal}% no atraso.`;
     } 
 
