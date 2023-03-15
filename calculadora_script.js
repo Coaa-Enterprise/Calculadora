@@ -20,8 +20,8 @@ function calcAtraso() {
     // Se o tempo que as pessoas demoram for menor que o tempo disponivel, não há atraso
 
     div_calc.innerHTML =       `<br><b>Sem o sistema C.O.A.A, observa-se que:</b><br>`;
-    div_calc.innerHTML +=      `<br>Média de pessoas por banheiro em um andar: ${pessoasBanheiro}.`; 
-    div_calc.innerHTML +=      `<br>Total de minutos médios necessários para todo mundo ir ao banheiro ${medio}.`;
+    div_calc.innerHTML +=      `<br>Média de pessoas por banheiro em um andar: ${pessoasBanheiro.toFixed(2)}.`; 
+    div_calc.innerHTML +=      `<br>Total de minutos médios necessários para todo mundo ir ao banheiro ${medio.toFixed(2)}.`;
    
    
     if (medio < tempo) {
@@ -31,8 +31,8 @@ function calcAtraso() {
 
     }
     else {
-        div_calc.innerHTML +=           `<br>Total de minutos disponibilizados: ${tempo}.`;
-        div_calc.innerHTML +=           `<br>Minutos de atraso: ${atraso}.`;
+        div_calc.innerHTML +=           `<br>Total de minutos disponibilizados: ${tempo.toFixed(2)}.`;
+        div_calc.innerHTML +=           `<br>Minutos de atraso: ${atraso.toFixed(2)}.`;
         buttonResolver.style.display =  "block";
     }
     
@@ -68,8 +68,8 @@ function resolveAtraso() {
     var porcentagemFinal = 100 - porcentagem
 
     div_resolve.innerHTML =      `<b>Aplicando o sistema C.O.A.A, observa-se que:</b><br>`;
-    div_resolve.innerHTML +=     `<br>Média de pessoas pelo total de banheiros no prédio: ${pessoasBanheiroSistema}.`;
-    div_resolve.innerHTML +=     `<br>Total de minutos médios necessários para todo mundo ir ao banheiro: ${medioSistema}.`;
+    div_resolve.innerHTML +=     `<br>Média de pessoas pelo total de banheiros no prédio: ${pessoasBanheiroSistema.toFixed(2)}.`;
+    div_resolve.innerHTML +=     `<br>Total de minutos médios necessários para todo mundo ir ao banheiro: ${medioSistema.toFixed(2)}.`;
     
     if (medioSistema <= tempo) {
 
@@ -77,8 +77,8 @@ function resolveAtraso() {
         div_resolve.innerHTML +=     `<br>Houve uma redução de 100% no atraso.`;
     }   
     else {
-        div_resolve.innerHTML =        `<br>Minutos de atrasos: ${atrasoSistema}.`;
-        div_resolve.innerHTML +=       `<br>Houve uma redução de ${porcentagemFinal}% no atraso.`;
+        div_resolve.innerHTML +=        `<br>Minutos de atrasos: ${atrasoSistema.toFixed(2)}.`;
+        div_resolve.innerHTML +=       `<br>Houve uma redução de ${porcentagemFinal.toFixed(2)}% no atraso.`;
     } 
 
     //buttonPagamento.style.display = "block";
